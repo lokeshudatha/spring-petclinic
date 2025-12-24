@@ -290,6 +290,14 @@
       </plugin>
     </plugins>
   </build>
+  
+  <distributionManagement>
+    <repository>
+      <id>gar-maven</id>
+      <url>https://us-central1-maven.pkg.dev/winter-monolith-477705-m8/maven-repo</url>
+    </repository>
+  </distributionManagement>
+
   <profiles>
     <profile>
       <id>css</id>
