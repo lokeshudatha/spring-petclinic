@@ -3,5 +3,5 @@ RUN apt update -y
 RUN apt install openjdk-21-jdk -y
 WORKDIR /app
 ADD https://storage.googleapis.com/udatha-bucket/sonarqube /app/app.jar
-EXPOSE 8081
+EXPOSE 8080
 CMD ["java", "-jar", "app.jar"]
