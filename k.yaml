@@ -15,10 +15,8 @@ spec:
       labels:
         app: frontend
     spec:
-      imagePullSecrets:
-        - name: gar-connection
       containers:
       - name: c26
-        image: siva2626/spk:v1
+        image: lokeshudatha/sonar:v1
         ports:
         - containerPort: 8080
