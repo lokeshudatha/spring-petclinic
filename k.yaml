@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: c27
-        image: lokeshudatha/python438:v439
+        image: lokeshudatha/java43:v5
         ports:
         - containerPort: 5000
 
