@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: c27
-        image: lokeshudatha/java43:v5
+        image: lokeshudatha/java:v1
         ports:
         - containerPort: 5000
 
