@@ -2,6 +2,6 @@ FROM ubuntu:22.04
 RUN apt update -y
 RUN apt install openjdk-21-jdk -y
 WORKDIR /app
-ADD https://storage.googleapis.com/udatha-bucket/sonarqube /app/app.jar
+ADD https://storage.googleapis.com/udatha-bucket/jan /app/app.jar
 EXPOSE 8080
 CMD ["java", "-jar", "app.jar"]
