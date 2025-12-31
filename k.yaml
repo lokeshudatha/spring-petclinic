@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: python1
+  name: python
   #namespace: siva-k8s
   labels:
     app: python-app
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: c27
-        image: lokeshudatha/java:v01
+        image: lokeshudatha/python:v01
         ports:
         - containerPort: 5000
 
@@ -25,7 +25,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: python-service1
+  name: service462
 spec:
   selector:
     app: frontend
