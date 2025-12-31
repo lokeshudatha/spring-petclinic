@@ -17,9 +17,9 @@ spec:
     spec:
       containers:
       - name: c27
-        image: lokeshudatha/python:v01
+        image: lokeshudatha/java:v01
         ports:
-        - containerPort: 5000
+        - containerPort: 8080
 
 ---
 apiVersion: v1
@@ -31,5 +31,5 @@ spec:
     app: frontend
   type: NodePort
   ports:
-    - targetPort: 5000
+    - targetPort: 8080
       port: 80
